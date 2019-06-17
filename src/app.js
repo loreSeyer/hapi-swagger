@@ -10,9 +10,9 @@ const jwt2=require('hapi-auth-jwt2');
 const Inert = require('inert');
 const Vision = require('vision');
 const HapiSwagger = require('hapi-swagger');
-// mongoose.connect('mongodb://localhost/sms-wesend')
-//     .then(db => console.log('db connected'))
-//     .catch(err=> console.log(err));
+mongoose.connect('mongodb://localhost/mensajes')
+.then(db => console.log('db connected'))
+.catch(err=> console.log(err));
 
 const server = Hapi.server({
   port: 3000,
@@ -41,8 +41,10 @@ const iniciarServer = async () => {
           info: {
             title: 'Documentación hapi',
             version: '1.0.0'
-
-          }
+          },
+          //code2
+          sortEndpoints: 'ordered',
+          grouping: 'tags'
         }
       }
     ]);
