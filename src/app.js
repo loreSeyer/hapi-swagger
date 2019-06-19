@@ -45,8 +45,9 @@ const iniciarServer = async () => {
           info: {
             title: 'Documentación hapi',
             version: '1.0.0'
-
-          }
+          },
+          sortEndpoints: 'ordered',
+          grouping: 'tags'
         }
       }
     ]);
