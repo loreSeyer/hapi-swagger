@@ -1,2 +1,3 @@
 var sw = require('./swagger');
-module.exports = [].concat(sw);
+var men = require('./mensajes');
+module.exports = [].concat(sw,men);

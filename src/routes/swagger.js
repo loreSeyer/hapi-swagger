@@ -23,5 +23,29 @@ module.exports = [
         handler: (req, reply) => {
             return "Esta es una ruta de prueba";
         }
+    },
+    {
+        method: 'PUT',
+        path: '/api/v1/edit',
+        config: {
+            description: 'Put hapi-swagger',
+            notes: 'Ruta de prueba para editar hapi-swagger',
+            tags: ['api', 'v1', 'rutas']
+        },
+        handler: (req, reply) => {
+            return "Esta es una ruta de prueba";
+        }
+    },
+    {
+        method: 'DELETE',
+        path: '/api/v1/remove',
+        config: {
+            description: 'Delete hapi-swagger',
+            notes: 'Ruta de prueba para eliminar desde hapi-swagger',
+            tags: ['api', 'v1', 'rutas']
+        },
+        handler: (req, reply) => {
+            return "Esta es una ruta de prueba";
+        }
     }
 ]
