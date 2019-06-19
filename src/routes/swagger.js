@@ -6,7 +6,7 @@ module.exports = [
         config: {
             description: 'Get hapi-swagger',
             notes: 'Ruta de prueba para obtener hapi-swagger',
-            tags: ['api', 'v1', 'rutas']
+            tags: ['api', 'rutas']
         },
         handler: (req, reply) => {
             return "Esta es una ruta de prueba";
@@ -18,7 +18,7 @@ module.exports = [
         config: {
             description: 'Post hapi-swagger',
             notes: 'Ruta de prueba para registrar hapi-swagger',
-            tags: ['api', 'v1', 'rutas']
+            tags: ['api', 'rutas']
         },
         handler: (req, reply) => {
             return "Esta es una ruta de prueba";
@@ -30,7 +30,7 @@ module.exports = [
         config: {
             description: 'Put hapi-swagger',
             notes: 'Ruta de prueba para editar hapi-swagger',
-            tags: ['api', 'v1', 'rutas']
+            tags: ['api', 'rutas']
         },
         handler: (req, reply) => {
             return "Esta es una ruta de prueba";
@@ -42,7 +42,7 @@ module.exports = [
         config: {
             description: 'Delete hapi-swagger',
             notes: 'Ruta de prueba para eliminar desde hapi-swagger',
-            tags: ['api', 'v1', 'rutas']
+            tags: ['api', 'rutas']
         },
         handler: (req, reply) => {
             return "Esta es una ruta de prueba";
